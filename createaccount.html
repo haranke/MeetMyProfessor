@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Website</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			height: 100vh;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.box {
+			width: calc(50% - 10px);
+            height: 100%;
+			margin-bottom: 20px;
+			padding: 20px;
+			border: 1px solid #ffffff;
+            border-radius: 10px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+            overflow: hidden;
+		}
+
+		.left-box {
+			background-color: #ffffff;
+			position: relative;
+		}
+
+		.logo {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			height: 60px;
+			width: auto;
+		}
+
+		.form-label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.form-input {
+			display: block;
+			width: 100%;
+			padding: 5px;
+			border: none;
+			border-bottom: 1px solid hwb(0 87% 13%);
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		.form-input:focus {
+			outline: none;
+			border-bottom: 1px solid #000;
+		}
+
+		.form-submit {
+			background-color: #450084;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.form-submit:hover {
+			background-color: #6f1cb1;
+		}
+
+        .login-form {
+			background-color: #ffffff;
+		}
+
+        .form-input[type="text"],
+        .form-input[type="password"] {
+            height: 30px;
+            font-size: 16px;
+        }
+        
+
+		@media (max-width: 768px) {
+			.box {
+				width: 100%;
+			}
+		}
+
+		.right-box img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box left-box">
+			<img class="logo" src="images/black-logo.png" alt="Logo">
+			<h1>Create an Account</h1>
+			<form>
+				<label class="form-label" for="firstname">First Name:</label>
+				<input class="form-input" type="text" id="firstname" name="firstname" >
+				<label class="form-label" for="lastname">Last Name:</label>
+				<input class="form-input" type="text" id="lastname" name="lastname">
+				<label class="form-label" for="email">Email:</label>
+				<input class="form-input" type="email" id="email" name="email" >
+				<label class="form-label" for="password">Password:</label>
+				<input class="form-input" type="password" id="password" name="password">
+				<label class="form-label" for="confirmpassword">Confirm Password:</label>
+				<input class="form-input" type="password" id="confirmpassword" name="confirmpassword">
+			</form>
+			<a href="index.html">
+				<input class="form-submit" type="submit" value="Submit">
+			  </a> 
+			  
+		</div>
+		<div class="box">
+			<img src="https://via.placeholder.com/800x600.png" alt="placeholder" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+		</div>
+	</div>
+</body>
+</html>

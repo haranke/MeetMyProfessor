@@ -1,0 +1,15 @@
+.nav-item a:hover {
+    color: #000000
+  }
+
+.nav-item a {
+    color: #ffffff;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow:none;
+}
+
+
+  
+  
